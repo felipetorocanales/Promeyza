@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promeyza</title>
+    <link href="index.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Promeyza</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Funciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mission-vision">Misión y Visión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#valores">Valores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-gradient bg-dark text-white text-center py-5 position-relative">
+        <div class="container d-flex flex-column align-items-center">
+            <img class="mb-3" src="images/Logo PM blanco.png" alt="Logo Promeyza" style="max-width: 70%;">
+            <p class="fs-1 lead mt-3">La promesa es contigo</p>
+            <a href="#hero" class="btn btn-light btn-lg mt-4 shadow-sm">Descubre más</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="position-relative text-center" id="hero">
+        <img src="images/universo2.jpg" class="img-fluid w-100" alt="Imagen representativa de Promeyza">
+        <div class="position-absolute top-50 start-50 translate-middle text-white bg-dark bg-opacity-75 p-4 rounded w-75 w-md-50">
+            <h2 class="display-6 display-md-5">¿Qué es Promeyza?</h2>
+            <p class="d-none d-md-block">
+                Promeyza es mi respuesta a la necesidad de apoyo y contención que vi en mi propia vida y en la de aquellos que me rodean. Como madre y como persona que ha enfrentado desafíos, sé que es fundamental tener un espacio donde puedas encontrar ayuda y orientación. Promeyza es ese espacio. Nuestro objetivo es brindar apoyo y contención a jóvenes, adolescentes y padres que buscan fortalecer sus lazos y conexión interior, aprendiendo y compartiendo diferentes experiencias para colaborarnos entre todos, vamos aprender juntos.
+            </p>
+            <button class="btn btn-light btn-sm d-md-none mt-3" data-bs-toggle="collapse" data-bs-target="#hero-text" aria-expanded="false" aria-controls="hero-text">
+                Leer más
+            </button>
+            <div class="collapse mt-3" id="hero-text">
+                <p>
+                    Promeyza es mi respuesta a la necesidad de apoyo y contención que vi en mi propia vida y en la de aquellos que me rodean. Como madre y como persona que ha enfrentado desafíos, sé que es fundamental tener un espacio donde puedas encontrar ayuda y orientación. Promeyza es ese espacio. Nuestro objetivo es brindar apoyo y contención a jóvenes, adolescentes y padres que buscan fortalecer sus lazos y conexión interior, aprendiendo y compartiendo diferentes experiencias para colaborarnos entre todos, vamos aprender juntos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="bg-dark py-5" id="products">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: #4caf50;">Nuestros Productos</h2>
+            <div id="productsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <!-- Product 1: Rollón de Aromaterapia de Lavanda -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4">
+                                <div class="p-4 bg-white rounded shadow-sm text-left">
+                                    <img src="images/aceites.jpg" class="img-fluid mb-3 rounded" alt="Rollón de Aromaterapia de Lavanda" style="max-width: 150px;">
+                                    <h3 class="h5" style="color: #4caf50;">Rollón de Aromaterapia de Lavanda</h3>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Relajación y Paz:</strong> Nuestro rollón de aromaterapia de lavanda es la herramienta perfecta para calmar la mente y el cuerpo en momentos de ansiedad o estrés.</li>
+                                        <li><strong>Calidad y Pureza:</strong> Nuestro aceite esencial de lavanda es de alta calidad y pureza, garantizando un aroma suave y relajante.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2: Libretas Personalizadas -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4">
+                                <div class="p-4 bg-white rounded shadow-sm text-left">
+                                    <img src="images/papeleria.jpg" class="img-fluid mb-3 rounded" alt="Libretas Personalizadas" style="max-width: 150px;">
+                                    <h3 class="h5" style="color: #4caf50;">Libretas Personalizadas</h3>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Inspiración y Motivación:</strong> Nuestras libretas están diseñadas para inspirarte y motivarte a alcanzar tus metas y sueños.</li>
+                                        <li><strong>Diseño y Personalización:</strong> Cada libreta es diseñada y personalizada según tus necesidades y preferencias, con frases de poder y motivacionales que te ayudarán a mantener una mentalidad positiva.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#productsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="container py-5" id="features">
+        <div class="row text-center">
+            <div class="col-md-3 mb-3">
+                <img src="images/mindfullnes.jpg" class="img-fluid rounded mb-3" alt="Función 1">
+                <h3 class="h5">Mindfulness</h3>
+                <p>Descripción breve de la primera función destacada de Promeyza.</p>
+            </div>
+            <div class="col-md-3 mb-3">
+                <img src="images/aceites.jpg" class="img-fluid rounded mb-3" alt="Función 2">
+                <h3 class="h5">Aceites esenciales en rollon</h3>
+                <p>Descripción breve de la segunda función destacada de Promeyza.</p>
+            </div>
+            <div class="col-md-3 mb-3">
+                <img src="images/papeleria.jpg" class="img-fluid rounded mb-3" alt="Función 3">
+                <h3 class="h5">Papelería con sentido y valor</h3>
+                <p>Descripción breve de la tercera función destacada de Promeyza.</p>
+            </div>
+            <div class="col-md-3 mb-3">
+                <img src="images/padres he hijos.jpg" class="img-fluid rounded mb-3" alt="Función 3">
+                <h3 class="h5">Taller de conexión padres/ hij@s</h3>
+                <p>Descripción breve de la tercera función destacada de Promeyza.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section class="bg-light py-5" id="mission-vision" style="background-color: #e3f2fd;">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: #1976d2;">Nuestra Misión y Visión</h2>
+            <div class="row">
+                <!-- Mission -->
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm" style="border-left: 5px solid #1976d2;">
+                        <h3 class="h5" style="color: #1976d2;">Misión</h3>
+                        <p>
+                            La misión de Promeyza es proporcionar un espacio de contención, conexión y apoyo para jóvenes, adolescentes y padres que necesitan ayuda y orientación. La organización busca fortalecer los lazos y la conexión interior de los jóvenes y adolescentes, y brindar herramientas y recursos para que puedan crecer y desarrollarse de manera óptima.
+                        </p>
+                    </div>
+                </div>
+                <!-- Vision -->
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm" style="border-left: 5px solid #1976d2;">
+                        <h3 class="h5" style="color: #1976d2;">Visión</h3>
+                        <p>
+                            La visión de Promeyza es crear una comunidad de apoyo y contención que permita a los jóvenes, adolescentes y padres conectarse con su poder interior y alcanzar su máximo potencial. La organización busca ser un refugio y un centro de ayuda para aquellos que necesitan orientación y apoyo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valores Section -->
+    <section class="bg-light py-5" id="valores" style="background-color: #fce4ec;">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: #d81b60;">Nuestros Valores</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="p-4 bg-white rounded shadow-sm" style="border-left: 5px solid #d81b60;">
+                        <p>
+                            La visión de Promeyza es crear una comunidad de apoyo y contención que permita a los jóvenes, adolescentes y padres conectarse con su poder interior y alcanzar su máximo potencial. La organización busca ser un refugio y un centro de ayuda para aquellos que necesitan orientación y apoyo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-light py-5" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <p class="text-center mb-4">Si tienes alguna pregunta o deseas más información, no dudes en contactarnos.</p>
+            <form class="mx-auto" style="max-width: 600px;" action="mailto:felipetoro.c@gmail.com" method="post" enctype="text/plain">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Popup Modal -->
+    <div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="popupModalLabel">🌿✨ Taller de Mindfulness y Desarrollo Personal ✨🌿</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>📅 Sábado 03 de mayo | 🕛 12:00 hrs y 15:00 hrs</strong></p>
+                    <p>🔹 ¿Te gustaría aprender a manejar el estrés y fortalecer tu autoestima?<br>
+                       🔹 ¿Quieres descubrir el poder del sonido y las palabras positivas?</p>
+                    <p><strong>💡 ¡Este taller es para ti!</strong></p>
+                    <p><strong>Dividido en dos grupos:</strong><br>
+                       👦 Grupo 1: 8-10 años<br>
+                       🧒 Grupo 2: 11-13 años</p>
+                    <p><strong>💫 Temas que exploraremos:</strong></p>
+                    <ul>
+                        <li>✅ Mindfulness: Aprende a estar presente y enfocado.</li>
+                        <li>✅ Amor propio y valoración personal: Descubre tu valor y merecimiento.</li>
+                        <li>✅ Sonoterapia: Vive una experiencia única a través del sonido.</li>
+                        <li>✅ Frases de poder y motivacionales: Usa palabras para potenciar tu confianza.</li>
+                    </ul>
+                    <p><strong>🎯 Nuestros objetivos:</strong></p>
+                    <ul>
+                        <li>✨ Fortalecer la autoestima y la confianza.</li>
+                        <li>✨ Desarrollar herramientas para manejar el estrés y la ansiedad.</li>
+                        <li>✨ Fomentar la empatía y la conexión con los demás.</li>
+                        <li>✨ Proporcionar recursos para el éxito y la felicidad.</li>
+                    </ul>
+                    <p>🚀 <strong>¡Inscripciones abiertas!</strong> No te quedes fuera de esta experiencia transformadora.<br>
+                       📩 Contáctanos en <a href="mailto:promeyza@gmail.com">promeyza@gmail.com</a> o ‪<a href="tel:+56965780608">+56965780608</a> para más info y reservar tu cupo.<br>
+                       📍 Ubicación: el panul 6770, La Florida.</p>
+                    <p><strong>🌟 ¡Te esperamos para compartir juntos este increíble viaje de crecimiento!</strong></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Promeyza. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Show the modal when the page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            var popupModal = new bootstrap.Modal(document.getElementById('popupModal'));
+            popupModal.show();
+        });
+    </script>
+</body>
+</html>
