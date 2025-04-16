@@ -1,6 +1,6 @@
 /* Gradiente de fondo para el banner */
 .bg-gradient {
-    background: linear-gradient(135deg, #6A0572, #C44569);
+    background: url('images/dark-night-with-stars.jpg') no-repeat center center fixed !important;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -66,4 +66,12 @@ header .btn:hover {
     background-color: #C44569;
     color: #fff;
     transform: scale(1.05);
+}
+
+#imganuncio{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+
 }

@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: url(images/dark-night-with-stars.jpg) no-repeat center center fixed !important;
+    color: white !important;
+    font-family: 'Segoe UI' !important;
+    max-width: 940px;
+    margin: 0 auto !important;
+}
+
+header{
+    background-color: black;
+    padding: 10px 0;
+}
+
+header img{
+    max-width: 200px;
+}
+
+main h1{
+    text-align: center;;
+}
