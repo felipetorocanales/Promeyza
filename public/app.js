@@ -21,28 +21,13 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore()
 
 onSnapshot(collection(db, "firmas"), (snapshot) => {
-    const tableBody = document.getElementById("lista-firmas");
-    tableBody.innerHTML = ""; // Clear the table body before updating
+    let sum = 0
     snapshot.forEach((doc) => {
-        const data = doc.data();
-        const row = document.createElement("tr");
-
-        // Create and append cells for each field
-        const nameCell = document.createElement("td");
-        nameCell.textContent = data.nombre;
-        row.appendChild(nameCell);
-
-        const emailCell = document.createElement("td");
-        emailCell.textContent = data.email;
-        row.appendChild(emailCell);
-
-        const dateCell = document.createElement("td");
-        dateCell.textContent = new Date(data.fecha).toLocaleString();
-        row.appendChild(dateCell);
-
-        // Append the row to the table body
-        tableBody.appendChild(row);
+        if (doc.data()){
+            sum++;
+        }   
     });
+    document.getElementById("sum-firmas").innerHTML = sum;
 });
 
 document.getElementById("formulario").addEventListener("submit", async (e) => {

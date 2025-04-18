@@ -75,3 +75,17 @@ header .btn:hover {
     margin: 0 auto;
 
 }
+
+#valores{
+    text-align: center;
+}
+
+#valores p{
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    background-color: #e8c5f1;
+    padding: 10px;
+    border-radius: 10px;
+}

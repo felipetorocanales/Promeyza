@@ -1,19 +1,21 @@
 *{
-    box-sizing: border-box;
-    
+    box-sizing: border-box ;
 }
 
 body{
-    background: url(images/dark-night-with-stars.jpg) no-repeat center center fixed !important;
-    color: white !important;
-    font-family: 'Segoe UI' !important;
-    max-width: 940px;
-    margin: 0 auto !important;
+    /* background: url(images/dark-night-with-stars.jpg) no-repeat center center fixed !important;
+    color: white !important; */
+    font-family: 'Tahoma';
 }
 
 header{
-    background-color: black;
-    padding: 10px 0;
+    background-color: #A2CDC4;
+    z-index:10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 header img{
@@ -21,5 +23,83 @@ header img{
 }
 
 main h1{
-    text-align: center;;
+    font-family: 'Trebuchet MS';
+    font-weight: bold !important;
+    color:aliceblue !important;
+    font-size:25px;
+}
+
+#intro{
+    margin: 60px 10% 10px;
+    background-color: #A2CDC4;
+    color: white !important;
+    opacity: 0.9;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+
+#formulario{
+    margin: 20px 10%;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"]:hover{
+    border-color: #A2CDC4;
+    outline: none;
+}
+
+input[type="text"]:focus{
+    border-color: #A2CDC4;
+    outline: none;
+}
+
+button{
+    width: 100%;
+    background-color: #A2CDC4 !important;
+    color: white !important;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #509385 !important;
+}
+
+p{
+    text-align: justify;
+}
+
+#firmas{
+    margin: 20px 10% 20px;
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
+    color: #6eb1a2;;
+}
+footer p{
+    text-align: center;
+}
+
+
+a{
+    padding:20px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover{
+    color: #509385;
+}
+
+#sum-firmas{
+    color: #32806f;
 }
