@@ -50,3 +50,4 @@ document.getElementById("formulario").addEventListener("submit", async (e) => {
         alert("Por favor, completa todos los campos.");
     }
 });
+

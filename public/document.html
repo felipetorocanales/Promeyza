@@ -4,28 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programa</title>
-    <link href="./document.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/document.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="./images/Logo PM blanco.png"></a>
+        <a id="logo" href="index.html"><img src="./images/Logo PM blanco.png"></a>
     </header>
+    <!-- Navbar -->
+    <nav>
+        <div>
+            <p><a href="#about">Nosotros</a></p>
+            <p><a href="#products">Productos y Servicios</a></p>
+            <p><a href="#mision-vision">Misión y Visión</a></p>
+            <p><a href="#valores">Valores</a></p>
+            <p><a href="#contact">Contacto</a></p>
+        </div>
+    </nav>
+
     <main>
         <section id="intro">
             <h1>Programa</h1>
             <p>Para leer el programa por favor descargalo en el siguiente link:</p>
-            <p class="link"><a href="./docs/Programa_Promeyza.pdf">Descargalo aquí</a></p>
+            <p><a id="download-link" href="./docs/Programa_Promeyza.pdf">Descargar</a></p>
         </section>  
+        <section id="firmas">
+            <h2><span id="sum-firmas"></span> <em>personas han mostrado su apoyo</em> &#129392; </h2>
+        </section>
         <section id="formulario">
-            <p>Muestra tu apoyo firmando con tu nombre y tu correo electrónico en el formulario</p>
+            <p>Muestra tu apoyo firmando con tu nombre y correo</p>
             <form>
                 <input type="text" id="nombre" placeholder="Nombre" required>
                 <input type="text" id="email" placeholder="Email" required>
                 <button type="submit">Firmar!</button>
             </form>
-        </section>
-        <section id="firmas">
-            <h2><em>Firmado por </em><span id="sum-firmas"></span> <em>personas</em> &#129392; </h2>
         </section>
     </main>
     <!-- Footer -->
