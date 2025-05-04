@@ -8,12 +8,13 @@
     <link href="./css/index.css" rel="stylesheet">
     <link href="./css/modal.css" rel="stylesheet">
     <link href="./css/animation.css" rel="stylesheet">
+    <link href="./css/document.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
 </head>
 <body>
     <header>
         <img id="star-image" src="./images/estrella.png">
-        <a  href="css/index.html"><img id="logo" src="./images/Logo PM blanco.png"></a>
+        <a  href="./css/index.html"><img id="logo" src="./images/Logo PM blanco.png"></a>
     </header>
     <!-- Navbar -->
     <nav>
@@ -33,7 +34,7 @@
             <p>
                 Promeyza es mi respuesta a la necesidad de apoyo y contención que vi en mi propia vida y en la de aquellos que me rodean. Como madre y como persona que ha enfrentado desafíos, sé que es fundamental tener un espacio donde puedas encontrar ayuda y orientación. Promeyza es ese espacio. Nuestro objetivo es brindar apoyo y contención a jóvenes, adolescentes y padres que buscan fortalecer sus lazos y conexión interior, aprendiendo y compartiendo diferentes experiencias para colaborarnos entre todos, vamos aprender juntos.
             </p>
-            <a href="document.html" id="ver-programa">Ver Programa</a>
+            <a href="./document.html" id="ver-programa">Ver Programa</a>
         </article>
         <img src="./images/abrazo.jpg" alt="personas abrazandose">
     </section>
@@ -43,14 +44,14 @@
         <h2>Colección de Productos</h2>
         <section>
             <article>
-                <img src="images/aceites.jpg" alt="Rollón de Aromaterapia de Lavanda">
+                <img src="./images/aceites.jpg" alt="Rollón de Aromaterapia de Lavanda">
                 <h3><em>Rollón de Aromaterapia de Lavanda</em></h3>
                 <p><strong>Relajación y Paz:</strong> Nuestro rollón de aromaterapia de lavanda es la herramienta perfecta para calmar la mente y el cuerpo en momentos de ansiedad o estrés.</p>
                 <br>
                 <p><strong>Calidad y Pureza:</strong> Nuestro aceite esencial de lavanda es de alta calidad y pureza, garantizando un aroma suave y relajante.</p>
             </article>
             <article>
-                <img src="images/papeleria.jpg" alt="Libretas Personalizadas">
+                <img src="./images/papeleria.jpg" alt="Libretas Personalizadas">
                 <h3><em>Libretas Personalizadas</em></h3>
                 <p><strong>Inspiración y Motivación:</strong> Nuestras libretas están diseñadas para inspirarte y motivarte a alcanzar tus metas y sueños.</p>
                 <br>
@@ -63,7 +64,7 @@
     <section id="features">
         <h2>Servicios</h2>
         <article>
-            <img class="left" src="images/mindfullnes.jpg" alt="Función 1">
+            <img class="left" src="./images/mindfullnes.jpg" alt="Función 1">
             <section> 
                 <h3>Mindfulness</h3>
                 <p>Concentración plena en el aquí y el ahora, no es necesario irnos a la india para concentrarnos en el momento, te ayudamos a realizar pequeños ejercicios para que
@@ -75,7 +76,7 @@
                 <h3>Taller de conexión padres/ hij@s</h3>
                 <p>Hermoso taller que podrás disfrutar con tu hijo o hija de profunda conexión interior, solo debes estar presente y la magia nace, estaremos en un ambiente sano, de mucho respeto y amor para reencontrarse.</p>
             </section>
-            <img class="right" src="images/padres he hijos.jpg" alt="Función 3">
+            <img class="right" src="./images/padres he hijos.jpg" alt="Función 3">
         </article>
     </section>
 
@@ -95,7 +96,7 @@
     </section> -->
 
     <!-- Mission and Vision Section -->
-    <!-- <section id="mision-vision">
+    <section id="mision-vision">
         <h2>Nuestra Misión y Visión</h2>
         <article class="left">
             <h3>Misión</h3>
@@ -109,8 +110,27 @@
                 La visión de Promeyza es crear una comunidad de apoyo y contención que permita a los jóvenes, adolescentes y padres conectarse con su poder interior y alcanzar su máximo potencial. La organización busca ser un refugio y un centro de ayuda para aquellos que necesitan orientación y apoyo.
             </p>
         </article>
-    </section> -->
+    </section>
 
+    <!-- document section-->
+    <section id="document">
+        <section id="intro">
+            <h1>Programa</h1>
+            <p>Para leer el programa por favor descargalo en el siguiente link:</p>
+            <p><a id="download-link" href="./docs/Programa_Promeyza.pdf">Descargar</a></p>
+        </section>  
+        <section id="firmas">
+            <h2><span id="sum-firmas"></span> <em>personas han mostrado su apoyo</em> &#129392; </h2>
+        </section>
+        <section id="formulario">
+            <p>Muestra tu apoyo firmando con tu nombre y correo</p>
+            <form>
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="email" placeholder="Email" required>
+                <button type="submit">Firmar!</button>
+            </form>
+        </section>
+    </section>
     <!-- Contact Section -->
     <section id="contact">
         <section>
@@ -124,6 +144,7 @@
             </form>
         </section>
     </section>
+    
 
     <!-- Footer -->
     <footer>
@@ -142,5 +163,6 @@
         </div>
     </div>
     <script type="module" src="./scripts/modal.js"></script>
+    <script type="module" src="./app.js"></script>
 </body>
 </html>

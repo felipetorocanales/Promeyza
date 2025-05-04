@@ -109,3 +109,21 @@ footer a {
 footer a:hover {
     color: #509385;
 }
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"]:hover{
+    border-color: #A2CDC4;
+    outline: none;
+}
+
+input[type="text"]:focus{
+    border-color: #A2CDC4;
+    outline: none;
+}
