@@ -116,34 +116,31 @@
 
 /* VALUES */
 
-
-#values{
-    background:url('images/universo1.jpg') repeat center fixed;
-    height: 600px;
-    width: 100%;
-}
-
-#values h2{
-    color: white;
-    font-size: 40px;
-    padding:20px;
-    text-align: center;
-}
-
-#values article{
+#values {
     display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    padding: 20px;
+    gap: 20px; /* Space between articles */
 }
 
-#values article p{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    padding:40px;
-    background-color: #3B295D;
-    color:white;
-    opacity: 0.8;
-    text-align: center;
-    font-size: 13px;
+#values .values-title{
+    width: 100px; /* Set a fixed width for the title */
+    font-size: 48px; /* Adjust font size for the title */
+    color: #3B295D; /* Dark purple color for the title */
+    margin-right: 20px; /* Space between title and articles */
+}
+
+#values article {
+    flex: 0 0 auto; /* Prevent articles from shrinking */
+    width: 250px; /* Set a fixed width for each article */
+    height: 400px; /* Set a fixed height for each article */
+    overflow-y: auto; /* Enable vertical scrolling inside articles */
+    padding: 20px;
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 /* MISION-VISION */
